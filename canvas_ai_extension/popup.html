@@ -1,0 +1,27 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Canvas AI Chat Extension</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 600px;
+      height: 800px;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    #chatFrame {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Load the chat page with ext=1 to show the cookie form -->
+  <iframe id="chatFrame" src="http://localhost:5000/chat?ext=1"></iframe>
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+{
+  "name": "Canvas AI Chat Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Displays AI chat and sends specific Canvas cookies to the server.",
+  "permissions": [
+    "cookies",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://YOURISD.instructure.com/*",
+    "http://localhost:5000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
